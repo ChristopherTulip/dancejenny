@@ -2,78 +2,9 @@
 
 
 <div class="panel"> <!--Panels for content -->
-    <div class="album"> <!-- Album panel -->
-        <span class="closeicon"><i class="icon-remove">a</i></span>
-        <span class="closeicon"><i class="icon-remove">a</i></span>
-        <div class="row">
-            <div  class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-              <div class="well imagebg-4 fixed-height"></div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="well imagebg-5 fixed-height"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs">
-              <div class="well imagebg-6 fixed-height"></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-              <div class="well imagebg-7 fixed-height"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div  class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-              <div class="well imagebg-8 fixed-height"></div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="well imagebg-9 fixed-height"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div  class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="well imagebg-10 fixed-height"></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-              <div class="well imagebg-11 fixed-height"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div  class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-              <div class="well imagebg-12 fixed-height"></div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="well imagebg-13 fixed-height"></div>
-            </div>
-        </div>
-    </div>
-    <div class="work"> <!-- Work panel -->
-        <span class="closeicon"><i class="icon-remove">a</i></span>
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-              <div class="well imagebg-3 fixed-height"></div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="well purple fixed-height">
-                  <h2>Project that we worked on and is cool</h2>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="well plum fluid-height overflow-show">
-                  <h1>Portfolio Item</h1>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed congue odio. Aliquam sed mi id massa faucibus dapibus. Suspendisse et mi felis. Nam ornare orci in tortor tempor porta. Fusce sed dapibus nisi, ut scelerisque ligula. Donec at leo est. Morbi condimentum fermentum tellus, ac mattis felis rutrum vitae.
-                  </p>
-                  <div class="outer-box-work">
-                      <p>Donec molestie, lacus a egestas feugiat, odio odio tincidunt enim, et consectetur tortor nisl eu arcu. Ut nec ultricies augue, sit amet ultricies mauris. In erat nisi, scelerisque in nisl et, pretium imperdiet arcu. Suspendisse potenti.</p>
-                  </div>
-                  <p class="big">In elementum interdum risus, nec vulputate erat rutrum at. Fusce posuere adipiscing tempor. Aenean bibendum a leo at elementum. Curabitur ut lectus at enim gravida mollis. Aliquam nisi mi, rutrum nec dolor at, ullamcorper ornare est. Fusce cursus consectetur mauris vel laoreet. Sed ligula tortor, gravida in nibh non, luctus semper orci. Aliquam sed pretium diam, non elementum purus. In purus erat, mollis a congue sit amet, elementum ut enim. Phasellus blandit sapien at orci dictum tempus. Nullam et lobortis orci.
-                  </p>
-              </div>
-          </div>
-        </div>
-    </div>
+  <%=render "album" %>
+  <%=render "work" %>
+
 </div>
 <div class="container-narrow">
   <div class="menu">
@@ -81,210 +12,24 @@
       <div class="nav-bar"></div>
       <div class="nav-bar"></div>
   </div>
-  <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="well orange shadow fixed-height"> <!-- Fixed height for 300px on all devices, shadow for a shadow and orange for the color -->
-            <h1>RYAN &amp; JENNY</h1>
-            <p class="big">//TODO develop catchy tagline</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <div class="well no-padding fixed-height">
-            <div class="flexslider" id="slider">
-                <ul class="slides">
-                    <li>
-                        <%= image_tag("slider-1.jpg") %>
-                    </li>
-                    <li>
-                        <%= image_tag("slider-2.jpg") %>
-                    </li>
-                    <li>
-                        <%= image_tag("slider-3.jpg") %>
-                    </li>
-                    <li>
-                        <%= image_tag("slider-4.jpg") %>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 click" id="blogone"> <!-- id #blogone to trigger content panel below also .click is used on clickable items -->
-        <div class="well no-padding fixed-height"> <!-- Fixed height for 300px on all devices, no-padding for a full div item -->
-            <div class="bp-post">
-                <div class="title">
-                    <h2>Performances</h2>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs"> <!-- .imagebg-2 css used for full div image -->
-          <div class="blue imagebg-2 well fixed-height">
-            <h1>Don't be a wild card, learn lifts and dips from the pros</h1>
-          </div>
-      </div>
-  </div>
-  <div class="blog-post-item one"> <!-- Only use this form of content panel when blog its matching to is the last col in the row so that it matches up on devices under 767px -->
-      <div class="arrow-up left"></div>
-      <h1>Ryan and Jenny's Freestyle Fusion Performances</h1>
-      <p>
-          //TODO Add some intro text here.
-      </p>
-      <div class="videoWrapper">
-        <iframe src="https://www.youtube.com/embed/Cxm3pegKLXk" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p>
-          //TODO Add some intro text here.
-      </p>
-      <div class="videoWrapper">
-        <iframe src="https://www.youtube.com/embed/OEez2JQXvQo" frameborder="0" allowfullscreen></iframe>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="home"> <!-- Overflow-show is used when .outer-box is used for example since it enables it to show outside the div -->
-        <div class="well sage overflow-show large">
-            <h1>Ryan Simms</h1>
-            <div class="outer-box">
-                <p>
-                    Ryan has been training and performing with the <span class="bold">Olympic Ballet Theatre</span> since 2010. His repertoire spans from Nutcracker Prince from <span class="bold">“The Nutcracker”</span> to Mordred from the contemporary piece “Griffes: Kairn of Koridwen” as well as many other appearances with ballet companies throughout the <span class="bold">Greater Seattle area</span>.
-                </p>
-            </div>
-            <p>
-              In 2010 he also started dancing <span class="bold">East Coast Swing</span>, from there, his love of partner dancing lead him to <span class="bold">West Coast Swing</span>, <span class="bold">Blues</span> and then in 2012 to <span class="bold">Fusion</span> dancing.
-            </p>
-            <div class="outside"> <!-- position changeable in css -->
-                <h2 class="text-right">We teach outside the box.</h2>
-            </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs">
-          <div class="well fixed-height imagebg-1">
-            <!-- imagebg-1 is useing css for the fullscreen background -->
-          </div>
-          <div class="well purple fixed-height">
-              <h1 class="text-right">Ryan Judged</h1>
-              <p class="text-right">State Street Jack &amp; Jill Competition (2015)</p>
-              <p class="text-right">Red Hot Fusion Jack &amp; Jill (2015)</p>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="well no-padding fixed-height click" id="album">
-              <div class="photo-album">
-                  <div class="album">
-                      <div class="title">View Album</div>
-                  </div>
-              </div>
-          </div>
-          <div class="well person-square2 fixed-height hidden-xs">
-          </div>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 large">
-          <div class="tealblue well large overflow-show" id="about">
-              <h1>Jenny Riley</h1>
-              <div class="span3 pull-right padding border">
-                  <h2 class="text-center">Smart &amp; Sassy</h2>
-              </div>
-              <p>
-                Jenny’s love of dance took off in 1999 when she discovered <span class="bold">Hip Hop</span>. She took home <span class="bold">first place</span> in several freestyle Hip Hop dance competitions and went on to <span class="bold">perform on stage</span> at many Electronic Music Festivals.
-              </p>
-              <div class="outer-box">
-                <p>In early 2013 Jenny immersed herself in <span class="bold">Blues, Fusion, Ballroom, Kizomba, Salsa, Bachata, and Merengue</span>, dancing between 3 and 6 nights a week! Her more recent focus is on <span class="bold">Tango, Zouk and Ballet</span>. Jenny’s unique style and training make her a creative and well-rounded fusion dancer.
-                </p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-        <div class="well-slider darksage">
-            <div id="content" class="flexslider">
-                <ul class="slides darksage">
-                    <li>
-                        <div class="content-slider padding">
-                            <h2>We Dance</h2>
-                            <p>In elementum interdum risus, nec vulputate erat rutrum at. Fusce posuere adipiscing tempor.</p>
-                        </div>
-                        <div class="image-slider">
-                            <%= image_tag("dance-icon.png") %>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content-slider padding">
-                            <h2>We Teach</h2>
-                            <p>In elementum interdum risus, nec vulputate erat rutrum at. Fusce posuere adipiscing tempor.</p>
-                        </div>
-                        <div class="image-slider">
-                            <%= image_tag("cog.png") %>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content-slider padding">
-                            <h2>We Judge</h2>
-                            <p>In elementum interdum risus, nec vulputate erat rutrum at. Fusce posuere adipiscing tempor.</p>
-                        </div>
-                        <div class="image-slider">
-                            <%= image_tag("cog2.png") %>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs"> <!-- .imagebg-2 css used for full div image -->
-          <div class="blue imagebg-2 well fixed-height">
-            <h1>Don't be a wild card, learn lifts safely</h1>
-          </div>
-      </div>
-  </div>
+
+
+
+  <%=render "header" %>
+  <%=render "performances" %>
+  <%=render "ryan" %>
+  <%=render "jenny" %>
+  <%=render "slider_and_albums_link" %>
+
 
   <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 large hidden-xs">
-          <div class="well plum large overflow-show">
-              <a href="#">
-                  <div class="social-box"><i class="icon-twitter"></i></div>
-              </a>
-              <h1>Twitter</h1>
-              <div class="tweet">
-                  <p><a href="#">@wrapbootstrap</a> mauris nec ultricies est, non rhoncus lacus. Donec elementum nunc luctus neque auctor</p>
-                  <p><span>3 hours ago</span></p>
-              </div>
-              <div class="tweet">
-                  <p>Donec molestie, lacus a egestas feugiat, odio odio tincidunt enim, et consectetur tortor nisl eu arcu</p>
-                  <p><span>8 hours ago</span></p>
-              </div>
-              <div class="tweet">
-                  <p><a href="#">@wrapbootstrap</a>  Ut nec ultricies augue, sit amet ultricies mauris</p>
-                  <p><span>17 hours ago</span></p>
-              </div>
-          </div>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 hidden-xs">
-          <div class="well purple">
-              <h1>News</h1>
-              <div class="article">
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                          <%= image_tag("6.jpg", class: "img-responsive") %>
-                      </div>
-                      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                          <p>
-                              Cras elementum cursus neque, vitae feugiat justo ullamcorper quis. Vivamus gravida posuere lorem.
-                          </p>
-                          <p>07/03/13 <span class="pull-right">Stan Smith</span></p>
-                      </div>
-                  </div>
-              </div>
-          </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="well no-padding fixed-height click hidden-xs" id="blogtwo"> <!-- click used n clickable items -->
               <div class="bp-post two">
                   <div class="overlay"></div>
-                  <div class="heart"><i class="icon-heart"></i></div>
-                  <div class="star"><i class="icon-star"></i></div>
                   <div class="title">
-                      <h2>Blog Post with overlay</h2>
+                      <h2>Teaching History</h2>
                   </div>
               </div>
           </div>
@@ -292,9 +37,17 @@
   </div>
   <div class="blog-post-item two">
       <div class="arrow-up right"></div>
-      <h1>Blog Post Title</h1>
+      <h2>Ryan Teaching</h2>
       <p>
-          In elementum interdum risus, nec vulputate erat rutrum at. Fusce posuere adipiscing tempor. Aenean bibendum a leo at elementum. Curabitur ut lectus at enim gravida mollis. Aliquam nisi mi, rutrum nec dolor at, ullamcorper ornare est. Fusce cursus consectetur mauris vel laoreet. Sed ligula tortor, gravida in nibh non, luctus semper orci. Aliquam sed pretium diam, non elementum purus. In purus erat, mollis a congue sit amet, elementum ut enim. Phasellus blandit sapien at orci dictum tempus. Nullam et lobortis orci.
+        Ryan has been teaching Ballet and Fusion dance classes since 2011. In 2012 Ryan created his own style of partner dancing that he coined “Ballusion” which is a combination of ballet partnering (Pas de Deux) and Fusion dance esthetics. He teaches frequently around Washington State at Om Culture Center in Seattle, State Street Fusion in Bellingham as well as other venues in British Columbia and Oregon.
+      </p>
+      <h2>Jenny Teaching</h2>
+      <p>
+        With a background in physiotherapy Jenny has been teaching group and one to one exercise programs since 2011, which has greatly contributed to her understanding of how to teach movement. Jenny has taught at several dance socials in the Vancouver area including Blues Café, Fuse as well as Fusion Project events.
+      </p>
+      <h2>Ryan and Jenny Co-teaching</h2>
+      <p>
+        Ryan and Jenny give a comprehensive breakdown of both lead and follow roles as well as give individualized feedback to their students. They especially enjoy teaching students how to perform beautiful, safe and creative dance lifts. They strive to make each class informative, challenging and fun! They have taught together at several dance events in Vancouver B.C, Victoria B.C, Bellingham WA, Seattle WA and Portland OR. In 2015 they taught workshop classes at the Bridgetown Fusion Festival, the Vancouver Next Level Fusion Exchange and the Seattle Fusion Festival.
       </p>
   </div>
   <div class="row">
