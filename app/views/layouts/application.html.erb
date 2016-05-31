@@ -23,15 +23,13 @@
 
 </head>
 <body>
-
-  <div class="nav-section">
-    <ul class="nav">
-        <li><a href="#home" class="scroll home">Ryan</a></li>
-        <li><a href="#about" class="scroll about">Jenny</a></li>
-        <li><a href="#work" class="scroll work">Teaching</a></li>
-        <li><a href="#contact" class="scroll contact">Contact</a></li>
-    </ul>
-  </div>
+  <header id="header-landing">
+    <% flash.each do |key, value| %>
+      <div class="flash">
+        <%= content_tag :h3 , value, class: "text-center #{key}" %>
+      </div>
+    <% end %>
+  </header>
 
   <%= yield %>
 

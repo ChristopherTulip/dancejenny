@@ -14,23 +14,41 @@
               </a>
           </div>
 
-          <div class="darkred well fixed-height">
+          <div class="darkred well fixed-height hidden-xs">
               <p class="copy">&copy; Chris Tulip</p>
           </div>
       </div>
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 large">
           <div class="blueberry well overflow-show large" id="contact">
               <h1>Contact</h1>
-              <form id="tab">
-                  <div class="outer-box">
-                      <input type="text" placeholder="First Name" value="" class="input-block-level bordered-input">
-                      <input type="text" placeholder="Last Name" value="" class="input-block-level bordered-input">
-                      <input type="text" placeholder="Email" value="" class="input-block-level bordered-input">
-                      <input type="text" placeholder="Subject" value="" class="input-block-level bordered-input">
-                      <textarea placeholder="Message" rows="3" class="input-block-level bordered-input"></textarea>
-                      <button class="btn transparent btn-large pull-right">Create Account</button>
-                  </div>
-              </form>
+              <%= form_tag do %>
+                <div class="outer-box">
+                  <%= text_field_tag('first_name',
+                                      nil,
+                                      placeholder:'First Name',
+                                      class:"input-block-level bordered-input" ) %>
+                  <%= text_field_tag('last_name',
+                                      nil,
+                                      placeholder:'Last Name',
+                                      class:"input-block-level bordered-input" ) %>
+                  <%= text_field_tag('email',
+                                      nil,
+                                      placeholder:'Email',
+                                      class:"input-block-level bordered-input" ) %>
+                  <%= text_field_tag('subject',
+                                      nil,
+                                      placeholder:'Subject',
+                                      class:"input-block-level bordered-input" ) %>
+                  <%= text_area_tag('message',
+                                      nil,
+                                      placeholder:'Message',
+                                      class:"input-block-level bordered-input" ) %>
+
+                  <%= submit_tag('Email Us',
+                                      class:"btn transparent btn-large pull-right" ) %>
+                </div>
+              <% end %>
+
           </div>
       </div>
   </div>
