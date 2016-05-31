@@ -4,7 +4,6 @@ function init() {
   backstretch();
   slider();
   contentslider();
-  // map();
   panels();
   blogposts();
 }
@@ -42,41 +41,41 @@ function menu() {
 
 
 function backstretch() { // used for fulldiv backgrounds
-  $(".bp-post").backstretch("assets/11.jpg");
+  $(".bp-post").backstretch("<%= asset_path("11.jpg") %>");
   $(".photo-album").backstretch([
-    "assets/7.jpg", "assets/11.jpg", "assets/3.jpg"
+    "<%= asset_path("7.jpg") %>", "<%= asset_path("11.jpg") %>", "<%= asset_path("3.jpg") %>"
     ], {
     duration: 10000,
     fade: 750
   });
-  $(".bp-post.two").backstretch("assets/12.jpg");
-  $(".portfolio-img.one").backstretch("assets/8.jpg");
-  $(".portfolio-img.two").backstretch("assets/9.jpg");
-  $(".portfolio-img.three").backstretch("assets/10.jpg");
-  $(".portfolio-img.four").backstretch("assets/11.jpg");
-  $(".portfolio-img.five").backstretch("assets/12.jpg");
-  $(".portfolio-img.six").backstretch("assets/13.jpg");
-  $(".portfolio-img.seven").backstretch("assets/14.jpg");
-  $(".portfolio-img.eight").backstretch("assets/15.jpg");
-  $(".portfolio-img.nine").backstretch("assets/16.jpg");
+  $(".bp-post.two").backstretch("<%= asset_path("12.jpg") %>");
+  $(".portfolio-img.one").backstretch("<%= asset_path("8.jpg") %>");
+  $(".portfolio-img.two").backstretch("<%= asset_path("9.jpg") %>");
+  $(".portfolio-img.three").backstretch("<%= asset_path("10.jpg") %>");
+  $(".portfolio-img.four").backstretch("<%= asset_path("11.jpg") %>");
+  $(".portfolio-img.five").backstretch("<%= asset_path("12.jpg") %>");
+  $(".portfolio-img.six").backstretch("<%= asset_path("13.jpg") %>");
+  $(".portfolio-img.seven").backstretch("<%= asset_path("14.jpg") %>");
+  $(".portfolio-img.eight").backstretch("<%= asset_path("15.jpg") %>");
+  $(".portfolio-img.nine").backstretch("<%= asset_path("16.jpg") %>");
     $(window).resize(function () {
-  $(".bp-post").backstretch("assets/11.jpg");
+  $(".bp-post").backstretch("<%= asset_path("11.jpg") %>");
   $(".photo-album").backstretch([
-    "assets/7.jpg", "assets/11.jpg", "assets/3.jpg"
+    "<%= asset_path("7.jpg") %>", "<%= asset_path("11.jpg") %>", "<%= asset_path("3.jpg") %>"
     ], {
     duration: 10000,
     fade: 750
   });
-  $(".bp-post.two").backstretch("assets/12.jpg");
-  $(".portfolio-img.one").backstretch("assets/8.jpg");
-  $(".portfolio-img.two").backstretch("assets/9.jpg");
-  $(".portfolio-img.three").backstretch("assets/10.jpg");
-  $(".portfolio-img.four").backstretch("assets/11.jpg");
-  $(".portfolio-img.five").backstretch("assets/12.jpg");
-  $(".portfolio-img.six").backstretch("assets/13.jpg");
-  $(".portfolio-img.seven").backstretch("assets/14.jpg");
-  $(".portfolio-img.eight").backstretch("assets/15.jpg");
-  $(".portfolio-img.nine").backstretch("assets/16.jpg");
+  $(".bp-post.two").backstretch("<%= asset_path("12.jpg") %>");
+  $(".portfolio-img.one").backstretch("<%= asset_path("8.jpg") %>");
+  $(".portfolio-img.two").backstretch("<%= asset_path("9.jpg") %>");
+  $(".portfolio-img.three").backstretch("<%= asset_path("10.jpg") %>");
+  $(".portfolio-img.four").backstretch("<%= asset_path("11.jpg") %>");
+  $(".portfolio-img.five").backstretch("<%= asset_path("12.jpg") %>");
+  $(".portfolio-img.six").backstretch("<%= asset_path("13.jpg") %>");
+  $(".portfolio-img.seven").backstretch("<%= asset_path("14.jpg") %>");
+  $(".portfolio-img.eight").backstretch("<%= asset_path("15.jpg") %>");
+  $(".portfolio-img.nine").backstretch("<%= asset_path("16.jpg") %>");
     });
 
   console.log("init backstretch");
