@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Message from <%= @data[:first_name] %> <%= @data[:last_name] %>:</h1>
+
+    <h2>User Information: </h2>
+    <p>Name: <%= @data[:first_name] %> <%= @data[:last_name] %></p>
+    <p>Email: <%= @data[:email] %></p>
+    <p>Message: <%= @data[:message] %></p>
+
+  </body>
+</html>
