@@ -97,6 +97,22 @@ margin: 0 0 0;
 
 .fixed-height { height: 300px !important; } /* For spans which you want to stay the same height on devices down to 767px */
 
+.fixed-height-350 { height: 350px !important; } /* For spans which you want to stay the same height on devices down to 767px */
+
+.fixed-width {
+  width: 100% !important;
+  margin-bottom: 20px;
+  max-height: 300px;
+} /* For spans which you want to stay the same height on devices down to 767px */
+
+.thingThatIWant {
+    position: relative;
+    top: 66%;
+    left: 50%;
+    margin-left: -90%;
+    margin-top: -50%;
+}
+
 .no-padding { padding: 0; } /* Used for items such as sliders */
 
 .padding { padding: 20px; }
@@ -106,6 +122,15 @@ margin: 0 0 0;
 .click { cursor: pointer; } /* Used it item is clickable */
 
 .fluid-height { height: 100% !important; }
+
+.slides li img {
+  position: relative;
+  top: 50%;
+  left: 75%;
+  margin-top: -50%;
+  margin-left: -75%;
+
+}
 
 .shadow { /* Used on any div you want a long shadow on */
   box-shadow:
@@ -813,7 +838,7 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
   -o-background-size: cover;
   background-size: cover; }
 
-.imagebg-1 { background: url('barack.jpg') no-repeat center bottom; }
+.imagebg-1 { background: url('ryan-square.jpg') no-repeat center bottom; }
 
 .imagebg-2 { background: #00B4CC url('card.png') no-repeat center bottom; }
 
