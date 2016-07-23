@@ -41,42 +41,55 @@ function menu() {
 
 
 function backstretch() { // used for fulldiv backgrounds
+  $(".photo-album").backstretch(
+    [
+      "<%= asset_path("website_main.jpg") %>",
+      "<%= asset_path("fish_lift_crop.jpg")%>",
+      "<%= asset_path("ryan-square")%>",
+      "<%= asset_path("jenny-square-head.jpg") %>"
+    ],
+    {
+      duration: 10000,
+      fade: 750
+    }
+  );
+
   $(".bp-post").backstretch("<%= asset_path("website_main.jpg") %>");
-  $(".photo-album").backstretch([
-    "<%= asset_path("7.jpg") %>", "<%= asset_path("website_main.jpg") %>", "<%= asset_path("3.jpg") %>"
-    ], {
-    duration: 10000,
-    fade: 750
-  });
   $(".bp-post.two").backstretch("<%= asset_path("fish_lift_crop.jpg") %>");
-  $(".portfolio-img.one").backstretch("<%= asset_path("8.jpg") %>");
-  $(".portfolio-img.two").backstretch("<%= asset_path("9.jpg") %>");
-  $(".portfolio-img.three").backstretch("<%= asset_path("10.jpg") %>");
-  $(".portfolio-img.four").backstretch("<%= asset_path("website_main.jpg") %>");
-  $(".portfolio-img.five").backstretch("<%= asset_path("12.jpg") %>");
-  $(".portfolio-img.six").backstretch("<%= asset_path("13.jpg") %>");
-  $(".portfolio-img.seven").backstretch("<%= asset_path("14.jpg") %>");
-  $(".portfolio-img.eight").backstretch("<%= asset_path("15.jpg") %>");
-  $(".portfolio-img.nine").backstretch("<%= asset_path("16.jpg") %>");
-    $(window).resize(function () {
-  $(".bp-post").backstretch("<%= asset_path("website_main.jpg") %>");
-  $(".photo-album").backstretch([
-    "<%= asset_path("7.jpg") %>", "<%= asset_path("website_main.jpg") %>", "<%= asset_path("3.jpg") %>"
-    ], {
-    duration: 10000,
-    fade: 750
+  $(".portfolio-img.one").backstretch("<%= asset_path("website_main.jpg") %>");
+  $(".portfolio-img.two").backstretch("<%= asset_path("fish_lift_crop.jpg") %>");
+  $(".portfolio-img.three").backstretch("<%= asset_path("SFF_2015.jpg") %>");
+  $(".portfolio-img.four").backstretch("<%= asset_path("SFF_2015_2.jpg") %>");
+  $(".portfolio-img.five").backstretch("<%= asset_path("UpClose.jpg") %>");
+  $(".portfolio-img.six").backstretch("<%= asset_path("laughing_crop.jpg") %>");
+  $(".portfolio-img.seven").backstretch("<%= asset_path("bridge.jpg") %>");
+  $(".portfolio-img.eight").backstretch("<%= asset_path("dip.jpg") %>");
+
+  $(window).resize(function () {
+    console.log("window resize");
+    $(".photo-album").backstretch(
+      [
+        "<%= asset_path("website_main.jpg") %>",
+        "<%= asset_path("fish_lift_crop.jpg")%>",
+        "<%= asset_path("ryan-square")%>",
+        "<%= asset_path("jenny-square-head.jpg") %>"
+      ],
+      {
+        duration: 10000,
+        fade: 750
+      }
+    );
+    $(".bp-post").backstretch("<%= asset_path("website_main.jpg") %>");
+    $(".bp-post.two").backstretch("<%= asset_path("fish_lift_crop.jpg") %>");
+    $(".portfolio-img.one").backstretch("<%= asset_path("website_main.jpg") %>");
+    $(".portfolio-img.two").backstretch("<%= asset_path("fish_lift_crop.jpg") %>");
+    $(".portfolio-img.three").backstretch("<%= asset_path("SFF_2015.jpg") %>");
+    $(".portfolio-img.four").backstretch("<%= asset_path("SFF_2015_2.jpg") %>");
+    $(".portfolio-img.five").backstretch("<%= asset_path("UpClose.jpg") %>");
+    $(".portfolio-img.six").backstretch("<%= asset_path("laughing_crop.jpg") %>");
+    $(".portfolio-img.seven").backstretch("<%= asset_path("bridge.jpg") %>");
+    $(".portfolio-img.eight").backstretch("<%= asset_path("dip.jpg") %>");
   });
-  $(".bp-post.two").backstretch("<%= asset_path("12.jpg") %>");
-  $(".portfolio-img.one").backstretch("<%= asset_path("8.jpg") %>");
-  $(".portfolio-img.two").backstretch("<%= asset_path("9.jpg") %>");
-  $(".portfolio-img.three").backstretch("<%= asset_path("10.jpg") %>");
-  $(".portfolio-img.four").backstretch("<%= asset_path("website_main.jpg") %>");
-  $(".portfolio-img.five").backstretch("<%= asset_path("12.jpg") %>");
-  $(".portfolio-img.six").backstretch("<%= asset_path("13.jpg") %>");
-  $(".portfolio-img.seven").backstretch("<%= asset_path("14.jpg") %>");
-  $(".portfolio-img.eight").backstretch("<%= asset_path("15.jpg") %>");
-  $(".portfolio-img.nine").backstretch("<%= asset_path("16.jpg") %>");
-    });
 
   console.log("init backstretch");
 }

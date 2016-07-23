@@ -113,7 +113,7 @@ margin: 0 0 0;
 } /* For spans which you want to stay the same height on devices down to 767px */
 
 .fixed-width-jenny {
-  width: 94% !important;
+  width: 82% !important;
   margin-bottom: 20px;
   max-height: 300px;
 }
@@ -854,34 +854,30 @@ input[placeholder], [placeholder], *[placeholder] { color: #fff !important; }
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  height: 500px;
+  max-width: 780px;
+}
 
-.imagebg-1 { background: url('ryan-square.jpg') no-repeat center bottom; }
+.imagebg-1 { background: url('ryan-square.jpg') no-repeat center; }
 
-.imagebg-2 { background: #00B4CC url('card.png') no-repeat center bottom; }
+.imagebg-2 { background: #00B4CC url('card.png') no-repeat center; }
 
-.imagebg-3 { background: #323232 url('3.jpg') no-repeat center bottom; }
+.imagebg-3 { background: #323232 url('website_main.jpg') no-repeat center; }
 
-.imagebg-4 { background: #323232 url('14.jpg') no-repeat center bottom; }
+.imagebg-4 { background: #323232 url('fish_lift_crop.jpg') no-repeat center; }
 
-.imagebg-5 { background: #323232 url('5.jpg') no-repeat center bottom; }
+.imagebg-5 { background: #323232 url('SFF_2015_crop.png') no-repeat center; }
 
-.imagebg-6 { background: #323232 url('6.jpg') no-repeat center bottom; }
+.imagebg-6 { background: #323232 url('SFF_2015_2.png') no-repeat center; }
 
-.imagebg-7 { background: #323232 url('7.jpg') no-repeat center bottom; }
+.imagebg-7 { background: #323232 url('UpClose.jpg') no-repeat center; }
 
-.imagebg-8 { background: #323232 url('8.jpg') no-repeat center bottom; }
+.imagebg-8 { background: #323232 url('laughing_crop.jpg') no-repeat center; }
 
-.imagebg-9 { background: #323232 url('9.jpg') no-repeat center bottom; }
+.imagebg-9 { background: #323232 url('Bridge.jpg') no-repeat center; }
 
-.imagebg-10 { background: #323232 url('10.jpg') no-repeat center bottom; }
-
-.imagebg-11 { background: #323232 url('11.jpg') no-repeat center bottom; }
-
-.imagebg-12 { background: #323232 url('12.jpg') no-repeat center bottom; }
-
-.imagebg-13 { background: #323232 url('13.jpg') no-repeat center bottom; }
-
+.imagebg-10 { background: #323232 url('dip.jpg') no-repeat center; }
 
 /*------------- Content Slider -------------*/
 
